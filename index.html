@@ -31,7 +31,7 @@
 			}
 			
 			// Check if password is valid
-			if (!password.match(/^(?=.\d)(?=.[A-Z])[a-zA-Z\d]{8,}$/)) {
+			if (!password.match(/^(?=.*\d)(?=.*[A-Z]).{8,}$/)) {
 				document.getElementById("passwordError").innerHTML = "Password must be at least 8 characters long and contain at least one numeric value and one uppercase letter";
 				return false;
 			}
